@@ -1,0 +1,27 @@
+
+.content {
+    margin: 20px;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mat-table {
+  width: 100%;
+}
+
+.mat-table .mat-row {
+  background-color: #e8e5e5;
+}
+
+.mat-table .mat-row.clickable {
+  background-color: white;
+  cursor: pointer;
+}
+
+.mat-table .mat-row.clickable:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}

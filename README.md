@@ -1,9 +1,10 @@
-# StoriesCodeChallenge
+# Stories Code Challenge
 
 ASP.NET core with Angular web application presenting newest stories from https://github.com/HackerNews/API
 
 You can navigate through client side pagination and also search stories according to your desired search criteria.
+Click the title in order to redirect to the url of the appropriate news article.
 
 Try it out on following web site https://storiescodechallenge20230227170406.azurewebsites.net/
 
-![image](https://user-images.githubusercontent.com/17317234/221834668-428b3cd3-20df-4ac5-92e6-e2fd56ed7cf4.png)
+![image](https://user-images.githubusercontent.com/17317234/221835026-7b839a55-a2c1-4bce-9760-cd241a462ac2.png)

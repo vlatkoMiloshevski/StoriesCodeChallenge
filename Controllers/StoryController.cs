@@ -36,7 +36,7 @@ namespace StoriesCodeChallenge.Controllers
                 if (!String.IsNullOrEmpty(searchTerm))
                 {
                     var search = searchTerm.ToLower();
-                    stories = stories.Where(s => s.Title.ToLower().IndexOf(search) > -1).ToList();
+                    stories = stories.Where(s => s.Title != null && s.Title.ToLower().IndexOf(search) > -1).ToList();
                 }
             }
             return stories;
@@ -54,6 +54,9 @@ namespace StoriesCodeChallenge.Controllers
                     {
                         var storyResponse = await response.Content.ReadAsStringAsync();
                         story = JsonConvert.DeserializeObject<Story>(storyResponse);
+                        if (story == null) {
+                            cacheEntry.Dispose();
+                        }
                     }
 
                     return story;
